@@ -22,8 +22,7 @@ public class BasicExample {
 		CrawlerPack.setLoggerLevel(SimpleLog.LOG_LEVEL_OFF);
 
 		// 遠端資料路徑
-		String uri = "https://www.ptt.cc/bbs/Gossiping/M.1491708250.A.E18.html";
-
+		String uri = "https://www.ptt.cc/bbs/Gossiping/M.1491725854.A.FCB.html";
 /*
 		System.out.println(
 
@@ -38,10 +37,11 @@ public class BasicExample {
 			    //.getFromXml(uri)
 
 			    // 這兒開始是 Jsoup Document 物件操作
-			    .select("div.push>span.f3")
+			    //.select("div.push>span.f3")
+				.select("div.push:contains(推)")
 
 		);
-		*/
+*/
 
 		Elements jsoup = CrawlerPack.start()
 
@@ -57,6 +57,7 @@ public class BasicExample {
 						.select("#main-content.bbs-screen.bbs-content");
 		jsoup.select("div,span").remove();
 		System.out.println(jsoup.text());
+
 
 	}
 }
