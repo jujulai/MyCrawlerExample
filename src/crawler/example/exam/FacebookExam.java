@@ -23,10 +23,10 @@ public class FacebookExam {
 		
 		// 遠端資料路徑
 
-		String uri =  
+		String uri =
 				"https://graph.facebook.com/v2.6/"
 				+ "crazyck101/feed?fields=id,message,likes.limit(0).summary(total_count),reactions.limit(0).summary(total_count)"
-				+ "&access_token=EAACEdEose0cBAEm8cf9HPTFbGOsQKaVhD4lcP5ZBlPsy0u4xaumME74rVaU1aUeJsKNZBA57xBcuUWyvmGnt3EJLr62GO97HG0UInQkOU4GH5HsOvzFmy9FcJuQiU0BAM4O8xGe0TwfZA2MCZCTHkXnc0e6w9VYQsH2I6ZBB8I4iXRgoBwOGWWbCThUZCfneIZD";
+				+ "&access_token=EAAb6qOBvh68BAHubfAOG61KOVHr7ZAJZAzd24yVTbpveGr5vQ498VHOVOlfOY8ZACy0RNdiujbCmqqZCPZBeSWh0jRoZCv3M6nF1VnSWDeMtTHG0ScJWaLLBW56vENgd5gnMBmYDTVvJ7ltsoSbro0N9FkJshVP4viqWoMNaegRLkmQrAGgIAt6kd7zMGMZC3wZD";
 
 
 		Elements elems =
